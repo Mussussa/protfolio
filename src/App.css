@@ -1,0 +1,31 @@
+/* src/App.css */
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  /* Retiramos o padding fixo para as seções ocuparem a largura total */
+}
+
+/* Reset básico para evitar espaços em branco indesejados */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden; /* Evita barra de rolagem horizontal no celular */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  
+}
+
+/* Ajuste para telas menores (Celulares) */
+@media (max-width: 768px) {
+  #root {
+    padding: 0; /* No celular, queremos aproveitar cada pixel */
+  }
+  
+  h1 {
+    font-size: 2rem; /* Diminui o título no celular para não quebrar */
+  }
+}

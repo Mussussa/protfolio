@@ -8,7 +8,7 @@ export const projects = [
     techs: ["HTML", "CSS"],
     videoUrl: "https://zyzdvidcerbddnqlyhoz.supabase.co/storage/v1/object/public/videos-portfolio/projeto-angell-v1.mp4",
     github: "Privado", // Como você mencionou que está privado
-    demo: "https://angellinternationalcomunity.vercel.app/" ,// Link que você terá quando lançar o domínio
+    demo: "https://angell-tawny.vercel.app/" ,// Link que você terá quando lançar o domínio
     "status" : "lancado"
   },
   {
@@ -29,7 +29,7 @@ export const projects = [
   solution: "Desenvolvi este site usando React e Supabase, implementando técnicas de proteção de vídeo e design responsivo para atrair clientes e recrutadores.",
   techs: ["React", "Vite", "Supabase Storage", "CSS3 Moderno"],
   videoUrl: "", // Aqui você pode colocar um vídeo de você navegando no próprio site!
-  demo: "https://seu-portfolio.vercel.app",
+  demo: "hhttps://protfolio-chi-livid.vercel.app/",
   github: "Privado",
   "status" : "lancado"
 }

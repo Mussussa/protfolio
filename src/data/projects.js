@@ -28,15 +28,5 @@ export const projects = [
     "github": "Privado",
     "status" : ""
 },
-{
-  id: 3, // Lembre-se de manter o ID único
-  title: "Portfólio Profissional v1",
-  problem: "Necessidade de uma vitrine centralizada que provasse minhas habilidades técnicas, contornando a limitação de repositórios privados através de demonstrações em vídeo.",
-  solution: "Desenvolvi este site usando React e Supabase, implementando técnicas de proteção de vídeo e design responsivo para atrair clientes e recrutadores.",
-  techs: ["React", "Vite", "Supabase Storage", "CSS3 Moderno"],
-  videoUrl: "", // Aqui você pode colocar um vídeo de você navegando no próprio site!
-  demo: "https://protfolio-chi-livid.vercel.app/",
-  github: "Privado",
-  "status" : "lancado"
-}
+
 ];

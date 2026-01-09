@@ -9,7 +9,7 @@ export const projects = [
   "videoUrl": "https://zyzdvidcerbddnqlyhoz.supabase.co/storage/v1/object/public/videos-portfolio/projeto-angell-v1.mp4",
   "github": "Privado",
   "demo": "https://angell-tawny.vercel.app/",
-  "status": "Lançado",
+  "status": "lancado",
   "features": [
     "Interface Responsiva",
     "FAQ Interativo",

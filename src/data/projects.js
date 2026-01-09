@@ -1,16 +1,22 @@
 // src/data/projects.js
 export const projects = [
-  {
-    id: 1,
-    title: "Site Institucional Pré-Escola",
-    problem: "Informações desorganizadas nas redes sociais dificultavam o acesso rápido dos pais aos detalhes da escola e ao contato direto.",
-    solution: "Desenvolvi uma landing page centralizada com React, organizando a grade curricular e integrando canais de comunicação direta.",
-    techs: ["HTML", "CSS"],
-    videoUrl: "https://zyzdvidcerbddnqlyhoz.supabase.co/storage/v1/object/public/videos-portfolio/projeto-angell-v1.mp4",
-    github: "Privado", // Como você mencionou que está privado
-    demo: "https://angell-tawny.vercel.app/" ,// Link que você terá quando lançar o domínio
-    "status" : "lancado"
-  },
+{
+  "id": 1,
+  "title": "Angell International School - Landing Page",
+  "problem": "Informações desorganizadas em redes sociais e excesso de dúvidas repetitivas via chat, dificultando a conversão de novas matrículas para 2026.",
+  "solution": "Desenvolvimento de uma Landing Page de alta performance com React, incluindo sistema de FAQ em acordeão para filtragem de dúvidas, background dinâmico com identidade visual integrada e arquitetura mobile-first para facilitar o contato direto via WhatsApp/Telefone.",
+  "techs": ["React", "CSS3", "JavaScript", "Supabase", "Vercel"],
+  "videoUrl": "https://zyzdvidcerbddnqlyhoz.supabase.co/storage/v1/object/public/videos-portfolio/projeto-angell-v1.mp4",
+  "github": "Privado",
+  "demo": "https://angell-tawny.vercel.app/",
+  "status": "Lançado",
+  "features": [
+    "Interface Responsiva",
+    "FAQ Interativo",
+    "Integração com API de Mensagens",
+    "Hospedagem de Mídia em Cloud (Supabase)"
+  ]
+},
   {
     "id": 2, 
     "title": "Portal de Exames & Biblioteca Digital",

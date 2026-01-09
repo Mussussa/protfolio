@@ -35,7 +35,7 @@ export const projects = [
   solution: "Desenvolvi este site usando React e Supabase, implementando técnicas de proteção de vídeo e design responsivo para atrair clientes e recrutadores.",
   techs: ["React", "Vite", "Supabase Storage", "CSS3 Moderno"],
   videoUrl: "", // Aqui você pode colocar um vídeo de você navegando no próprio site!
-  demo: "hhttps://protfolio-chi-livid.vercel.app/",
+  demo: "https://protfolio-chi-livid.vercel.app/",
   github: "Privado",
   "status" : "lancado"
 }

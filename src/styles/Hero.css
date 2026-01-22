@@ -1,12 +1,25 @@
 /* src/styles/Hero.css */
 .hero {
-  height: 50vh;
+  height: 60vh; /* Aumentei um pouco para caber o logo confortavelmente */
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #253866;
   color: white;
-  padding: 0 5%;
+  padding: 5% 5%; /* Ajustado padding superior */
+}
+
+/* Estilização do Logo */
+.hero-logo-container {
+  margin-bottom: 1.5rem;
+}
+
+.hero-logo {
+  width: 120px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  border-radius: 50%; /* Se o logo for redondo, se não, pode remover */
+  border: 2px solid #3b82f6; /* Uma borda fina para dar destaque */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero-content {
@@ -14,8 +27,10 @@
   max-width: 800px;
 }
 
-h1 { font-size: 3rem; margin-bottom: 1rem; }
-.highlight { color: #3b82f6; }
+h1 { 
+  font-size: 2.5rem; /* Ajustei um pouco para não brigar com o logo */
+  margin-bottom: 1rem; 
+}
 
 .description {
   font-size: 1.2rem;

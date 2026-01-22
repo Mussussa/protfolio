@@ -5,6 +5,11 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-content">
+        {/* Adicionando o Logotipo */}
+        <div className="hero-logo-container">
+          <img src="/logo.jpeg" alt="Vulpe Logo" className="hero-logo" />
+        </div>
+
         <h1>Olá, sou Desenvolvedor Web <span className="highlight">Full Stack</span></h1>
         <p className="description">
           Meu foco é <strong>codificar soluções para problemas de clientes</strong>. 

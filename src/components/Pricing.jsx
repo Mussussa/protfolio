@@ -36,7 +36,7 @@ const Pricing = () => {
       <div className="pricing-header">
         {/* <h2 className="brand-subtitle">VULPE WEB SYSTEMS & SITES</h2> */}
         <h3 className="section-title">PACOTES IMBATÍVEIS PARA 2026</h3>
-        <p className="section-desc">Soluções Digitais sob medida para o seu Negócio</p>
+        <p className="section-desc">Soluções Digitais sob medida para o seu Negócio (por 1 ano)</p>
       </div>
 
       <div className="cards-container">

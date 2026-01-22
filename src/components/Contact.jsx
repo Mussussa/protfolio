@@ -24,7 +24,7 @@ const Contact = () => {
           <div className="card-content">
             <h3>WhatsApp</h3>
             <p>Clique para iniciar conversa</p>
-            <strong>+258 87 610 8960</strong>
+            {/* <strong>+258 87 610 8960</strong> */}
           </div>
         </a>
 
@@ -35,8 +35,8 @@ const Contact = () => {
         >
           <div className="card-content">
             <h3>E-mail</h3>
-            <p>Envie uma proposta para:</p>
-            <strong>{email}</strong>
+            <p>Clique para iniciar conversa</p>
+            {/* <strong>{email}</strong> */}
           </div>
         </a>
 
@@ -48,7 +48,7 @@ const Contact = () => {
           <div className="card-content">
             <h3>Telefone</h3>
             <p>Segunda a Sexta-feira</p>
-            <strong>87 610 8960</strong>
+            
           </div>
         </a>
 

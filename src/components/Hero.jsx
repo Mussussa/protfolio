@@ -1,6 +1,7 @@
 // src/components/Hero.jsx
 import '../styles/Hero.css';
 
+
 const Hero = () => {
   return (
     <section className="hero">
@@ -8,6 +9,7 @@ const Hero = () => {
         {/* Adicionando o Logotipo */}
         <div className="hero-logo-container">
           <img src="/logo.jpeg" alt="Vulpe Logo" className="hero-logo" />
+          <p>VULPE WEB SYSTEMS & SITES</p>
         </div>
 
         <h1>Olá, sou Desenvolvedor Web <span className="highlight">Full Stack</span></h1>

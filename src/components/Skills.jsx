@@ -13,7 +13,7 @@ const Skills = () => {
     },
     {
       title: "Bancos de Dados",
-      tools: ["MySQL (Relacional)", "MongoDB (NoSQL)"]
+      tools: ["MySQL (Relacional)", "MongoDB (NoSQL)", "PostgreSQL (Relacional)"]
     },
     {
       title: "Ferramentas & Deploy",

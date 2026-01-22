@@ -1,0 +1,231 @@
+/* src/styles/Pricing.css */
+
+.pricing-section {
+  background-color: #1e293b; /* Fundo escuro levemente diferente do Hero */
+  color: white;
+  padding: 80px 5%;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Cabeçalho da Seção */
+.brand-subtitle {
+  color: #3b82f6; /* Azul da marca */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.section-desc {
+  color: #94a3b8;
+  margin-bottom: 50px;
+  font-size: 1.1rem;
+}
+
+/* Container dos Cards */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center; /* Alinha verticalmente para destacar o do meio */
+  margin-bottom: 60px;
+}
+
+/* Estilo Básico do Card */
+.pricing-card {
+  background-color: #253866; /* Mesmo azul do Hero */
+  border: 1px solid #334155;
+  border-radius: 15px;
+  padding: 30px;
+  width: 300px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+/* Efeito Hover */
+.pricing-card:hover {
+  transform: translateY(-5px);
+  border-color: #3b82f6;
+}
+
+/* Card em Destaque (Site + Blog) */
+.highlight-card {
+  transform: scale(1.05); /* Um pouco maior */
+  border: 2px solid #eab308; /* Borda Dourada/Amarela */
+  background-color: #1e3a8a; /* Um azul um pouco mais vivo */
+  z-index: 2;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.highlight-card:hover {
+  transform: scale(1.08);
+}
+
+.best-value-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #eab308;
+  color: #1e293b;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Texto Interno do Card */
+.card-header h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.card-desc {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  margin-bottom: 25px;
+  min-height: 50px; /* Alinha altura dos textos */
+}
+
+/* Lista de Features */
+.card-features {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+.card-features li {
+  margin-bottom: 10px;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+}
+
+/* Botões dos Cards */
+.btn-plan {
+  display: block;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-plan:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn-highlight {
+  background-color: #eab308; /* Amarelo no destaque */
+  border: none;
+  color: #1e293b;
+}
+
+.btn-highlight:hover {
+  background-color: #ca8a04;
+  color: white;
+}
+
+/* Caixa de Manutenção */
+.maintenance-box {
+  background-color: rgba(59, 130, 246, 0.1); /* Fundo azul transparente */
+  border: 1px dashed #3b82f6;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.maintenance-icon {
+  font-size: 1.5rem;
+}
+
+.maintenance-text {
+  text-align: left;
+}
+
+.price-mini {
+  color: #eab308;
+  font-weight: bold;
+}
+
+/* CTA Final e Botão WhatsApp Grande */
+.cta-final p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.btn-whatsapp-large {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #25D366; /* Verde Oficial do WhatsApp */
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+  transition: 0.3s;
+}
+
+.btn-whatsapp-large:hover {
+  background-color: #1da851;
+  transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+  }
+  
+  .highlight-card {
+    transform: scale(1); /* Remove o zoom no mobile para não quebrar layout */
+    margin: 10px 0;
+  }
+  
+  .highlight-card:hover {
+    transform: scale(1);
+  }
+  
+  .maintenance-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .maintenance-text {
+    text-align: center;
+  }
+}

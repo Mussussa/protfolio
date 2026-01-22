@@ -1,28 +1,28 @@
 // src/data/projects.js
 export const projects = [
 
-  {
-  "id": 1,
-  "title": "Sistema Corporativo com Blog Integrado",
-  "problem": "Necessidade de instituições manterem um canal de notícias atualizável sem depender de um programador para cada nova postagem.",
-  "solution": "Implementação de um ecossistema digital robusto conectando um Front-end em React à um Headless CMS via Webhooks. O sistema permite que o cliente publique artigos em tempo real, com otimização automática de imagens e SEO para o mercado moçambicano.",
-  "techs": ["React", "Tailwind CSS", "Sanity.io", "Webhooks", "Vercel"],
-  "videoUrl": "/banner1.jpeg",
-  "github": "Privado",
-  "demo": "https://vulpe-blog-demo.vercel.app/",
-  "status": "Disponível para Implementação",
-  "features": [
-    "Painel Administrativo para o Cliente (CMS)",
-    "Atualização Automática via Webhooks",
-    "Otimização para SEO (Google Moçambique)",
-    "Gestão de Categorias e Notícias",
-    "Suporte a 300 MT por atualização (Opcional)"
-  ],
-  "pricing_model": {
-    "setup": "7.000 MT",
-    "maintenance": "300 MT por atualização (após 3º mês)"
-  }
-},
+//   {
+//   "id": 1,
+//   "title": "Sistema Corporativo com Blog Integrado",
+//   "problem": "Necessidade de instituições manterem um canal de notícias atualizável sem depender de um programador para cada nova postagem.",
+//   "solution": "Implementação de um ecossistema digital robusto conectando um Front-end em React à um Headless CMS via Webhooks. O sistema permite que o cliente publique artigos em tempo real, com otimização automática de imagens e SEO para o mercado moçambicano.",
+//   "techs": ["React", "Tailwind CSS", "Sanity.io", "Webhooks", "Vercel"],
+//   "videoUrl": "/banner1.jpeg",
+//   "github": "Privado",
+//   "demo": "https://vulpe-blog-demo.vercel.app/",
+//   "status": "Disponível para Implementação",
+//   "features": [
+//     "Painel Administrativo para o Cliente (CMS)",
+//     "Atualização Automática via Webhooks",
+//     "Otimização para SEO (Google Moçambique)",
+//     "Gestão de Categorias e Notícias",
+//     "Suporte a 300 MT por atualização (Opcional)"
+//   ],
+//   "pricing_model": {
+//     "setup": "7.000 MT",
+//     "maintenance": "300 MT por atualização (após 3º mês)"
+//   }
+// },
 {
   "id": 2,
   "title": "Angell International School - Landing Page (video insponivel no momento)",

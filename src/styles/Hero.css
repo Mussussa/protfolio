@@ -1,58 +1,145 @@
-/* src/styles/Hero.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@800&display=swap');
+
 .hero {
-  height: 60vh; /* Aumentei um pouco para caber o logo confortavelmente */
+  min-height: 80vh; /* Aumentado para dar mais destaque */
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #253866;
   color: white;
-  padding: 5% 5%; /* Ajustado padding superior */
-}
-
-/* Estilização do Logo */
-.hero-logo-container {
-  margin-bottom: 1.5rem;
-}
-
-.hero-logo {
-  width: 120px; /* Ajuste o tamanho conforme necessário */
-  height: auto;
-  border-radius: 50%; /* Se o logo for redondo, se não, pode remover */
-  border: 2px solid #3b82f6; /* Uma borda fina para dar destaque */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 50px 5%;
+  text-align: center; /* Centraliza textos internos */
 }
 
 .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza itens no eixo horizontal */
+  justify-content: center;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Container do Logo e Texto da Marca */
+.hero-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+.hero-logo {
+  width: 250px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3b82f6;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.hero-logo:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.hero-logo-container p {
+  margin-top: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 5px; /* Espaçamento elegante */
+  text-transform: uppercase;
+  color: #3b82f6;
+  font-weight: 800;
   text-align: center;
-  max-width: 800px;
 }
 
-h1 { 
-  font-size: 2.5rem; /* Ajustei um pouco para não brigar com o logo */
-  margin-bottom: 1rem; 
+/* Título Principal */
+.hero-content h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.8rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  animation: fadeInDown 1s ease-out;
+  /* Removido o margin-left que desalinhava */
 }
 
+.highlight {
+  color: #3b82f6;
+}
+
+/* Descrição Principal */
 .description {
-  font-size: 1.2rem;
-  color: #94a3b8;
-  margin-bottom: 2rem;
-  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.15rem;
+  color: #cbd5e1;
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+  max-width: 650px;
+  /* Centralização automática de margens */
+  margin-left: auto; 
+  margin-right: auto;
+  animation: fadeIn 1.5s ease-in;
+}
+
+/* Botões */
+.hero-btns {
+  display: flex;
+  gap: 15px; /* Uso de gap em vez de margin-right para melhor controle */
+  justify-content: center;
+  animation: fadeIn 2s ease-in;
 }
 
 .btn-primary {
   background-color: #3b82f6;
   color: white;
-  padding: 12px 24px;
+  padding: 14px 28px;
   border-radius: 8px;
   text-decoration: none;
-  margin-right: 15px;
   font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+  transform: translateY(-3px);
 }
 
 .btn-secondary {
-  border: 1px solid #3b82f6;
+  border: 2px solid #3b82f6;
   color: #3b82f6;
-  padding: 12px 24px;
+  padding: 14px 28px;
   border-radius: 8px;
   text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+/* Animações */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+  .hero-content h1 { font-size: 2rem; }
+  .hero-btns { flex-direction: column; width: 100%; }
+  .btn-primary, .btn-secondary { margin-right: 0; width: 100%; }
 }

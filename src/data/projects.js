@@ -42,7 +42,7 @@ export const projects = [
   "status": "Concluído & Implantado na Vercel"
 },
 {
-  "id": 3,
+  "id": 4,
   "title": "Chimoio Eats - Ecossistema Integrado de Gestão de Restauração & Reservas Online",
   "problem": "Restaurantes em Moçambique sofrem com quebras financeiras severas causadas por 'falsas reservas', falta de rastreio de assiduidade de pessoal e desperdício de stock devido a prazos de validade não monitorizados, além da dependência de processos manuais vulneráveis a erros.",
   "solution": "Desenvolvi uma plataforma Full-Stack robusta que une a operação interna ao ecossistema digital do cliente. O sistema conta com controle rigoroso de assiduidade, gestão preditiva de stock com alertas de validade crítica, mapa dinâmico de mesas e um portal público de reservas online com cobrança automatizada via PaySuite (M-Pesa/E-Mola), mitigando prejuízos por não-comparência e centralizando o fluxo financeiro em tempo real.",

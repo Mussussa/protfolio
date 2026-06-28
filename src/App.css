@@ -13,10 +13,115 @@
   box-sizing: border-box;
 }
 
-body {
+.body {
   overflow-x: hidden; /* Evita barra de rolagem horizontal no celular */
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   
+}
+.bolha{
+  color: aliceblue;
+  display: flex;
+  width: 70px;
+  height: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+   justify-items: center;
+   transition: scale 0.2s ease-in-out;
+   
+
+}
+.bolha:hover {
+  scale: 1.1; 
+  
+}
+.chat_space{
+  z-index: 9999;
+  position: fixed;
+  right: 35px;
+  bottom: 90px;
+  background-color: rgb(28, 31, 31);
+  color: aliceblue;
+  display: block;
+  width: 40%;
+  height: auto;
+}
+.titulo{
+  font-size: small;
+  margin: 2%;
+  background-color: rgb(204, 204, 219);
+  color: rgba(0, 0, 0, 1);
+  border-radius: 20px;
+  justify-content: center;
+  padding: 3px;
+  align-items: center;
+
+}
+/* O Formulário em si (Agora empilha os elementos verticalmente) */
+.conversa form {
+  display: flex;
+  flex-direction: column; /* Joga os botões para baixo da caixa de texto */
+  gap: 8px;
+}
+
+/* O Campo de Texto (Agora como Textarea) */
+.conversa form textarea {
+  width: 100%;
+  height: 60px; /* Altura ideal para ver cerca de 3 linhas */
+  padding: 10px 14px;
+  background-color: rgb(45, 49, 49);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: aliceblue;
+  font-size: 14px;
+  outline: none;
+  resize: none; /* Impede o usuário de arrastar e deformar o layout */
+  overflow-y: auto; /* Ativa o scroll vertical automático ao passar de 3 linhas */
+  box-sizing: border-box; /* Garante que o padding não quebre a largura */
+  font-family: inherit; /* Mantém a mesma fonte do site */
+}
+
+/* Efeito de foco no textarea */
+.conversa form textarea:focus {
+  border-color: rgb(204, 204, 219);
+}
+
+/* Container dos botões (Alinha os dois botões lado a lado, abaixo do texto) */
+.botoes_form {
+  display: flex;
+  justify-content: flex-end; /* Empurra os botões para a direita */
+  gap: 8px;
+  width: 100%;
+}
+
+/* Mantém o estilo dos botões que você já configurou */
+.conversa form button {
+  padding: 8px 14px; /* Diminuído um pouco para caber melhor na altura do modal */
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.conversa form button:hover {
+  opacity: 0.85;
+}
+
+.conversa form button[type="submit"] {
+  background-color: rgb(204, 204, 219);
+  color: rgb(28, 31, 31);
+}
+
+.conversa form button[type="button"] {
+  background-color: transparent;
+  color: rgb(180, 180, 180);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Ajuste para telas menores (Celulares) */
@@ -27,5 +132,8 @@ body {
   
   h1 {
     font-size: 2rem; /* Diminui o título no celular para não quebrar */
+  }
+  .chat_space{
+    width: 70%;
   }
 }

@@ -1,0 +1,31 @@
+/* Container que segura as mensagens */
+.historico-mensagens {
+  max-height: 250px; /* Limita o tamanho para dar scroll interno se crescer */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Base de todos os balões */
+.balao-mensagem {
+  max-width: 75%;
+  padding: 8px 12px;
+  border-radius: 12px;
+  word-wrap: break-word;
+}
+
+/* Quando a mensagem for do Usuário -> Alinha à Direita */
+.balao-mensagem.usuario {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: white;
+}
+
+/* Quando a mensagem for da IA -> Alinha à Esquerda */
+.balao-mensagem.ia {
+  align-self: flex-start;
+  background-color: #333;
+  color: aliceblue;
+}

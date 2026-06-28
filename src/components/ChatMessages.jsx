@@ -1,6 +1,15 @@
 // src/components/ChatMessages.jsx
+import { useEffect, useRef } from "react";
 import '../styles/chat.css';
+
 export default function ChatMessages({ historico }) {
+  const fimDasMensagensRef = useRef(null);
+
+  // Faz a rolagem suave sempre que o histórico ganhar uma nova mensagem
+  useEffect(() => {
+    fimDasMensagensRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [historico]);
+
   return (
     <div className="historico-mensagens">
       {historico.map((msg, index) => {
@@ -17,6 +26,9 @@ export default function ChatMessages({ historico }) {
           </div>
         );
       })}
+      
+      {/* Âncora invisível onde o scroll vai focar */}
+      <div ref={fimDasMensagensRef} />
     </div>
   );
 }

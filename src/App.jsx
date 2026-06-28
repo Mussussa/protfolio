@@ -56,9 +56,9 @@ function App() {
             ${JSON.stringify(mydatas)}
             
             Regras de resposta:
-            1. Use os dados acima para responder de forma precisa sobre o que cada projeto faz, as tecnologias utilizadas e as soluções criadas pelo Ismael.
-            2. Seja direto, amigável e profissional. Responda em no máximo 2 ou 3 parágrafos.
-            3. Se o usuário perguntar por um projeto que NÃO está na lista acima, responda educadamente que esse projeto não está listado no momento e ofereça informações sobre os projetos que existem no JSON.
+            1. Use os dados acima para responder de forma precisa sobre o que cada projeto faz, as tecnologias utilizadas e as soluções criadas pelo Ismael (resumidamente).
+            2. Seja direto, amigável e profissional. Responda em no máximo 2 parágrafos  (resumidamente).
+            3. Se o usuário perguntar por um projeto que NÃO está na lista acima, responda educadamente que esse projeto não está listado no momento e ofereça informações sobre os projetos que existem no JSON  (resumidamente).
             4. convida sempre ao whatsapp :258876108960 ou email: xismaelchaibo@mail.com
             5. resume todas as resposta o maximo possivel
 

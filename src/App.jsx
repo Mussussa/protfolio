@@ -49,7 +49,7 @@ function App() {
         contents: historicoComUsuario, 
         config: {
           systemInstruction: `
-            Você é o ISMAEL CHATBOT, o assistente virtual do portfólio do Ismael Chaibo (Desenvolvedor Full Stack e estudante de Engenharia Eletrónica).
+            Você é o ISMAEL CHATBOT, o assistente virtual do portfólio do Ismael Chaibo (Desenvolvedor Full Stack e estudante de Engenharia Eletrónica) , programador à 2 anos.
             Sua missão é responder dúvidas dos visitantes com base nos projetos reais do Ismael.
             
             Aqui está a lista oficial de projetos antigos e atuais do Ismael obtidos diretamente do banco de dados do sistema:

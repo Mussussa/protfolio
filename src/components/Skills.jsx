@@ -5,7 +5,7 @@ const Skills = () => {
   const skillGroups = [
     {
       title: "Frontend",
-      tools: ["HTML5", "CSS3", "JavaScript", "React", "Handlebars"]
+      tools: ["HTML5", "CSS3", "JavaScript", "Tailwind", "React", "Handlebars"]
     },
     {
       title: "Backend & Server Side",
